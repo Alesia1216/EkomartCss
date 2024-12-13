@@ -1,3 +1,4 @@
+
 body{
     margin: 0 auto;
     width: 1280px;
@@ -12,9 +13,10 @@ h1{
  font-size: xxx-large;
 }
 
-h2, h3, h4, h5{
- display: none;
+.hidden{
+    display: none;
 }
+
 
 /* HEADER */
 
@@ -26,56 +28,65 @@ header{
    padding-inline: 30px;
 }
 
-header > section#fila1,
-header > section#fila2{
+#fila1, #fila2{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: #ccd4cf 1px solid;
-    
 }
 
-section#fila1 > section#register{
+#currency{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    h3{
+        margin-right: 10px;
+    }
+}
+
+#register{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        margin-inline: 40px;
+    }
     
 }
 
-header > section#fila1 a:link, header > section#fila1 a:visited, header > section#fila1 a:active, header > section#fila1 a:hover{
+#fila1 a:link, #fila1 a:visited, #fila1 a:active, #fila1 a:hover{
     color: black;
     text-decoration: none;
 }
 
-section#register > p{
-    margin-inline: 40px;
-}
 
-section#fila2 > section#contact{
+#contact{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    img{
+        height: 40px;
+        width: 40px;
+        margin-inline: 10px;
+    }
 }
 
-section#fila2 > section#contact > img{
-    height: 40px;
-    width: 40px;
-    margin-inline: 10px;
-}
-
-
-section#fila2 > section#search{
+#search{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
 
-section#fila2 > section#search > *{
-    padding-inline: 10px;
+    *{
+        padding-inline: 10px;
+    }
 }
 
 /* HEADER ends */
@@ -96,12 +107,12 @@ nav>ul{
     width: 40%;
 }
 
-nav>ul>li>a:link, nav>ul>li>a:visited, nav>ul>li>a:active, nav>ul>li>a:hover{
+nav a:link, nav a:visited, nav a:active, nav a:hover{
     color: black;
     text-decoration: none;
 }
 
-nav>ul>li>a#home::after{
+nav #home::after{
     background-image: url("../img/arrowdown.png");
     display: inline-block;
     content: "";
@@ -114,7 +125,7 @@ nav>ul>li>a#home::after{
     margin-right: 6px;
 }
 
-nav>ul>li>a#shop::after{
+nav #shop::after{
     background-image: url("../img/arrowdown.png");
     display: inline-block;
     content: "";
@@ -127,7 +138,7 @@ nav>ul>li>a#shop::after{
     margin-right: 6px;
 }
 
-nav>ul>li>a#page::after{
+nav #page::after{
     background-image: url("../img/arrowdown.png");
     display: inline-block;
     content: "";
@@ -146,126 +157,134 @@ nav>ul>li>a#page::after{
 
 /* BANNER */
 
-main>section#banner{
+#banner{
     display: flex;
     flex-direction: column;
-    background-image: url("../img/banner.png");
+    align-items: start;
+    background-image: url("../img/banner.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 240px;
-}
+    height: 350px;
 
-main>section#banner>h1{
-    font-size: 50px;
-    text-shadow: 1px 1px 2px pink;
-    margin: 15px;
-    margin-left: 70px;
-}
+    h1{
+        width: 500px;
+        font-size: 40px;
+        margin-top: 80px;
+        margin-left: 200px;
+        margin-bottom: 0;
+    }
 
-main>section#banner>a>button{
-    margin-left: 70px;
-    height: 35px;
-    width: 80px;
-    background-color:forestgreen;
-    border: none;
-    border-radius: 5px;
-    color: white;
+    p{
+        width: 500px;
+        margin-left: 200px;
+    }
+
+    a{
+        text-align: center;      
+        margin-left: 200px;
+        padding-block: 16px;
+        padding-inline: 32px;
+        background-color:forestgreen;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+
+    a:link, nav a:visited, nav a:active, nav a:hover{
+        color: white;
+        text-decoration: none;
+    }
 }
 
 /* INFO */
 
-main>section#info>ul{
+#info>ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 50px;
-    margin-inline: 190px;
+    margin-inline: 30px;
+    margin-right: 350px;
     list-style-type: none;
-    text-align: center;
+    text-align: start;
     
+    article > img{
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+        position: absolute;
+        margin-top: 25px;
+
+    }
+
+    article h3{
+        font-size: small;
+        margin-left: 50px;
+        margin-top: 25px;
+        position: absolute;
+    }
+
+    article p{
+        font-size: smaller;
+        color: #555;
+        margin-left: 50px; 
+        margin-top: 45px;
+        position: absolute;
+    }
+
 }
-
-
-main>section#info>ul>li>p#shippment::before{
-    background-image: url("../img/shippment.png");
-    display: inline-block;
-    content: "";
-    vertical-align: middle;
-    background-size: cover;
-    background-position:left;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin-right: 6px;
-}
-
-main>section#info>ul>li>p#reload::before{
-    background-image: url("../img/reload.png");
-    display: inline-block;
-    content: "";
-    vertical-align: middle;
-    background-size: cover;
-    background-position:left;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    margin-right: 6px;
-}
-
-main>section#info>ul>li>p#payment::before{
-    background-image: url("../img/creditcard.png");
-    display: inline-block;
-    content: "";
-    vertical-align: middle;
-    background-size: cover;
-    background-position:left;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin-right: 6px;
-}
-
-main>section#info>ul>li>p#chat::before{
-    background-image: url("../img/chat.png");
-    display: inline-block;
-    content: "";
-    vertical-align: middle;
-    background-size: cover;
-    background-position:left;
-    position: relative;
-    width: 50px;
-    height: 50px;
-    margin-right: 6px;
-}
-
 
 /* SHOPBC */
 
-main>section#shopbc>h1{
-    text-align: center;
-    font-size: xx-large;
-}
+#shopbc{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 170px;
+
+    h2{
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    p{
+        color: #555;
+        margin-top: 0;
+    }
+
+   /* CATEGORIES */
+
+    #categories{
+        margin: 80px;
+    }
+
+    #categories>ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+
+    #categories>ul>li{
+        margin-inline: 30px;
+        border: 0.5px solid #e7ecea;
+    }
+
+    #categories img{
+        width: 150px;
+        height: 150px;
+    }
+
+    #categories p{
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+} 
 
         
-        /* CATEGORIES */
-
-        main>section#shopbc>section#categories{
-            margin: 80px;
-        }
-
-        main>section#shopbc>section#categories>ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            list-style-type: none;
-        }
-
-        main>section#shopbc>section#categories img{
-            width: 100px;
-            height: 100px;
-        }
-
 
         /* INTERESTING */
 
