@@ -987,24 +987,340 @@ footer {
 
 /* Estilos responsivos */
 
+
+/* Portatiles */
+
+@media screen and (max-width : 1400px) and (min-width: 1101px) {
+
+    body {
+        width: 1000px;
+    }
+
+    header {
+        padding-inline: 15px;
+    }
+
+    #fila1 {
+        flex-flow: row wrap;
+        justify-content: center;
+        border-bottom: none;
+        gap: 15px;
+    }
+
+
+    #fila2 {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    #fila1 h1,
+    #fila2 h1 {
+        position: static;
+        margin-inline: 0;
+        margin-block: 10px;
+        margin-left: 110px;
+    }
+
+    #fila1 select,
+    #fila2 select {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #fila1 div,
+    #fila2 div {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #currency h3 {
+        font-size: smaller;
+        margin-right: 5px;
+    }
+
+    #register {
+        margin-block: 10px;
+    }
+
+    #social {
+        margin-block: 10px;
+    }
+
+    #contact {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-block: 10px;
+    }
+
+    #contact img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #search {
+        flex-direction: row;
+        align-items: flex-start;
+
+        a {
+            padding-inline: 2px;
+        }
+    }
+
+
+    /* Nav */
+    nav ul {
+        width: 80%;
+    }
+
+    /* Banner */
+    #banner {
+        background-size: cover;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #banner h1 {
+        margin: 10px auto;
+        font-size: 2.5rem;
+    }
+
+    #banner p,
+    #banner a {
+        margin: 10px auto;
+    }
+
+    #info {
+        ul {
+            width: 90%;
+            padding: 0;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px;
+
+            li {
+                margin-block: 30px;
+                margin-inline: 110px;
+            }
+        }
+    }
+
+
+    #shopbc {
+        margin-block: 70px;
+    }
+
+    /* Categories */
+    #categories {
+        
+        ul {
+            flex-flow: row wrap;
+            align-items: center;
+            gap: 10px;
+
+            li {
+                text-align: center;
+                justify-content: center;
+                width: 20%;
+
+                div {
+                    margin-inline: 40px;
+                }
+            }
+        }
+    }
+
+    /* Interesting */
+    #interesting {
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+        width: 70%;
+        gap: 100px;
+    }
+
+
+    /* Deals */
+    #deals {
+        margin-block: 20px;
+    }
+
+    #deals>div {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #deals article {
+        width: 100%;
+        height: auto;
+    }
+
+    #deals #verde1,
+    #deals #verde2 {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    /* Featured */
+
+
+    #featured {
+        margin-block: 30px;
+
+        ul:first-of-type {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            gap: 10px;
+
+            li {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        #subfeatured ul {
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            li {
+                width: 20%;
+            }
+        }
+    }
+
+    #news {
+        margin-block: 10px;
+
+        h2 {
+            margin-block: 20px;
+        }
+
+        div {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            article {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                p {
+                    text-align: center;
+                }
+
+                img {
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+
+    /* About Us */
+    #about {
+        flex-flow: row wrap;
+        height: auto;
+        align-items: center;
+        margin-inline: auto;
+        width: 70%;
+        padding-block: 30px;
+    }
+
+    #about section,
+    #about #aboutcontact {
+        width: 40%;
+        align-items: start;
+        justify-content: start;
+        border: none;
+        padding: 0;
+    }
+
+    #about ul {
+        align-items: center;
+    }
+
+    #aboutcontact {
+
+        a {
+            margin-block: 5px;
+        }
+
+        div {
+            flex-direction: column;
+            align-items: center;
+            margin-block: 2px;
+            padding-block: 2px;
+        }
+    }
+
+
+
+    /* Newsletter */
+    #newsletter {
+        max-width: 80%;
+
+        #signup {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            border: none;
+
+            h2 {
+                border: none;
+                padding: 0;
+            }
+
+            form {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+
+                input[type="text"] {
+                    margin: 0;
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #botomnav ul {
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        flex-flow: row wrap;
+        padding-inline: 60px;
+    }
+
+    footer section {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+}
+
+
+
 /* Tablets */
 
-/* @media screen and (max-width<=1024px) {
-    main {
-        flex-wrap: wrap;
-    }
+@media screen and (max-width : 1100px) and (min-width: 901px) {
 
-    section {
-        flex: 1 1 calc(50% - 2rem);
-    }
-} */
-
-
-/* Telefonos */
-
-@media screen and (width<=750px) {
     body {
-        width: 750px;
+        width: 820px;
     }
 
     header {
@@ -1048,10 +1364,10 @@ footer {
         margin-right: 5px;
     }
 
-    #register{
+    #register {
         margin-block: 10px;
 
-        p:nth-of-type(2){
+        p:nth-of-type(2) {
             display: none;
         }
     }
@@ -1080,8 +1396,8 @@ footer {
 
 
     /* Nav */
-    nav ul{
-       width: 80%; 
+    nav ul {
+        width: 80%;
     }
 
     /* Banner */
@@ -1102,7 +1418,7 @@ footer {
         margin: 10px auto;
     }
 
-    #info ul{
+    #info ul {
         width: 70%;
         padding: 0;
         flex-flow: row wrap;
@@ -1110,14 +1426,14 @@ footer {
         justify-content: center;
         margin: 10px;
 
-        li{
+        li {
             margin-block: 30px;
             margin-inline: 120px;
         }
     }
 
 
-    #shopbc{
+    #shopbc {
         margin-block: 100px;
     }
 
@@ -1131,15 +1447,15 @@ footer {
             text-align: center;
             justify-content: center;
             width: 40%;
-    
-            div{
+
+            div {
                 margin-inline: 40px;
             }
         }
     }
 
     /* Interesting */
-    #interesting{
+    #interesting {
         flex-direction: column;
         align-items: center;
         height: 1000px;
@@ -1149,9 +1465,9 @@ footer {
 
 
     /* Deals */
-    #deals{
+    #deals {
         margin-block: 20px;
-    }   
+    }
 
     #deals>div {
         flex-direction: column;
@@ -1182,37 +1498,37 @@ footer {
             align-items: center;
             gap: 10px;
 
-            li{
+            li {
                 width: 100%;
                 margin: 0;
             }
         }
-       
+
         #subfeatured ul {
             flex-flow: row wrap;
             align-items: center;
             justify-content: center;
             width: 100%;
-    
-            li{
+
+            li {
                 width: 40%;
             }
         }
     }
 
-    #news{
+    #news {
         margin-block: 10px;
 
-        h2{
+        h2 {
             margin-block: 20px;
         }
 
-        div{
+        div {
             flex-direction: column;
             align-items: center;
             gap: 20px;
 
-            article{
+            article {
                 width: 80%;
                 display: flex;
                 flex-direction: column;
@@ -1220,8 +1536,12 @@ footer {
                 justify-content: center;
                 text-align: center;
 
-                p{
+                p {
                     text-align: center;
+                }
+
+                img {
+                    border-radius: 20px;
                 }
             }
         }
@@ -1234,6 +1554,7 @@ footer {
         align-items: center;
         margin-inline: auto;
         width: 70%;
+        padding-block: 30px;
     }
 
     #about section,
@@ -1249,21 +1570,33 @@ footer {
         align-items: center;
     }
 
-    #aboutcontact div {
-        flex-direction: column;
-        align-items: center;
+    #aboutcontact {
+
+        a {
+            margin-block: 5px;
+        }
+
+        div {
+            flex-direction: column;
+            align-items: center;
+            margin-block: 2px;
+            padding-block: 2px;
+        }
     }
+
+
 
     /* Newsletter */
     #newsletter {
-        max-width: 90%;
+        max-width: 80%;
 
         #signup {
             flex-direction: column;
             gap: 10px;
             align-items: center;
-    
-            h2{
+            border: none;
+
+            h2 {
                 border: none;
                 padding: 0;
             }
@@ -1284,9 +1617,329 @@ footer {
         }
     }
 
-    #botomnav ul{
-        width: 80%; 
-     }
+    #botomnav ul {
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        flex-flow: row wrap;
+        padding-inline: 60px;
+    }
+
+    footer section {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+}
+
+
+/* Telefonos */
+
+@media screen and (max-width : 900px) {
+    body {
+        width: 730px;
+    }
+
+    header {
+        padding-inline: 15px;
+    }
+
+    #fila1 {
+        flex-flow: row wrap;
+        justify-content: center;
+        border-bottom: none;
+        gap: 15px;
+    }
+
+
+    #fila2 {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    #fila1 h1,
+    #fila2 h1 {
+        position: static;
+        margin-inline: 0;
+        margin-block: 10px;
+    }
+
+    #fila1 select,
+    #fila2 select {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #fila1 div,
+    #fila2 div {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #currency h3 {
+        font-size: smaller;
+        margin-right: 5px;
+    }
+
+    #register {
+        margin-block: 10px;
+
+        p:nth-of-type(2) {
+            display: none;
+        }
+    }
+
+    #social {
+        margin-block: 10px;
+    }
+
+    #contact {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-block: 10px;
+    }
+
+    #contact img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #search {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-block: 10px;
+        width: 80%;
+    }
+
+
+    /* Nav */
+    nav ul {
+        width: 80%;
+    }
+
+    /* Banner */
+    #banner {
+        background-size: cover;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #banner h1 {
+        margin: 10px auto;
+        font-size: 2.5rem;
+    }
+
+    #banner p,
+    #banner a {
+        margin: 10px auto;
+    }
+
+    #info ul {
+        width: 70%;
+        padding: 0;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+
+        li {
+            margin-block: 30px;
+            margin-inline: 120px;
+        }
+    }
+
+
+    #shopbc {
+        margin-block: 100px;
+    }
+
+    /* Categories */
+    #categories ul {
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 10px;
+
+        li {
+            text-align: center;
+            justify-content: center;
+            width: 40%;
+
+            div {
+                margin-inline: 40px;
+            }
+        }
+    }
+
+    /* Interesting */
+    #interesting {
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+        width: 70%;
+        gap: 100px;
+    }
+
+
+    /* Deals */
+    #deals {
+        margin-block: 20px;
+    }
+
+    #deals>div {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #deals article {
+        width: 100%;
+        height: auto;
+    }
+
+    #deals #verde1,
+    #deals #verde2 {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    /* Featured */
+
+
+    #featured {
+        margin-block: 30px;
+
+        ul:first-of-type {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            li {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        #subfeatured ul {
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            li {
+                width: 40%;
+            }
+        }
+    }
+
+    #news {
+        margin-block: 10px;
+
+        h2 {
+            margin-block: 20px;
+        }
+
+        div {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            article {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+
+                p {
+                    text-align: center;
+                }
+
+                img {
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+
+    /* About Us */
+    #about {
+        flex-flow: row wrap;
+        height: auto;
+        align-items: center;
+        margin-inline: auto;
+        width: 70%;
+        padding-block: 30px;
+    }
+
+    #about section,
+    #about #aboutcontact {
+        width: 40%;
+        align-items: start;
+        justify-content: start;
+        border: none;
+        padding: 0;
+    }
+
+    #about ul {
+        align-items: center;
+    }
+
+    #aboutcontact {
+
+        a {
+            margin-block: 5px;
+        }
+
+        div {
+            flex-direction: column;
+            align-items: center;
+            margin-block: 2px;
+            padding-block: 2px;
+        }
+    }
+
+
+
+    /* Newsletter */
+    #newsletter {
+        max-width: 80%;
+
+        #signup {
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            border: none;
+
+            h2 {
+                border: none;
+                padding: 0;
+            }
+
+            form {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+
+                input[type="text"] {
+                    margin: 0;
+                }
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #botomnav ul {
+        width: 80%;
+    }
 
     /* Footer */
     footer {
