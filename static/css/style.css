@@ -225,39 +225,55 @@ nav #page::after {
 
 /* INFO */
 
-#info>ul {
+#info {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 50px;
-    margin-inline: 30px;
-    margin-right: 310px;
-    list-style-type: none;
-    text-align: start;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+
+        li {
+            width: fit-content;
+        }
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
+        margin-inline: 20px;
+    }
 
     article>img {
         width: 40px;
         height: 40px;
-        margin-bottom: 10px;
-        position: absolute;
-        margin-top: 25px;
-
+        grid-column: 1;
+        grid-row: 1 / 3;
     }
 
     article h3 {
         font-size: small;
-        margin-left: 50px;
-        margin-top: 25px;
-        position: absolute;
+        grid-column: 2;
+        grid-row: 1;
+        margin-block: 0;
+        width: fit-content;
     }
 
     article p {
         font-size: smaller;
         color: #555;
-        margin-left: 50px;
-        margin-top: 45px;
-        position: absolute;
+        grid-column: 2;
+        grid-row: 2;
+        margin-block: 0;
+        width: fit-content;
     }
 
 }
@@ -294,7 +310,7 @@ nav #page::after {
             color: white;
             text-align: center;
             width: 150px;
-            position: absolute;
+            position: relative;
             padding-block: 6px;
         }
 
@@ -990,7 +1006,7 @@ footer {
 
 /* Portatiles */
 
-@media screen and (width <= 1400px) and (width >= 1101px) {
+@media screen and (width <=1400px) and (width >=1101px) {
     body {
         width: 1000px;
     }
@@ -1090,19 +1106,7 @@ footer {
     }
 
     #info {
-        ul {
-            width: 90%;
-            padding: 0;
-            flex-flow: row wrap;
-            align-items: center;
-            justify-content: space-between;
-            margin: 10px;
-
-            li {
-                margin-block: 30px;
-                margin-inline: 110px;
-            }
-        }
+        margin-block: 40px;
     }
 
 
@@ -1123,7 +1127,7 @@ footer {
                 width: 20%;
 
                 div {
-                    margin-inline: 40px;
+                    width: 100%;
                 }
             }
         }
@@ -1314,7 +1318,7 @@ footer {
 
 /* Tablets */
 
-@media screen and (width <= 1100px) and (width >= 901px) {
+@media screen and (width <=1100px) and (width >=901px) {
     body {
         width: 820px;
     }
@@ -1415,16 +1419,14 @@ footer {
     }
 
     #info ul {
-        width: 70%;
-        padding: 0;
         flex-flow: row wrap;
         align-items: center;
         justify-content: center;
-        margin: 10px;
 
         li {
-            margin-block: 30px;
-            margin-inline: 120px;
+            width: 40%;
+            margin-block: 10px;
+            margin-inline: 10px;
         }
     }
 
@@ -1445,7 +1447,7 @@ footer {
             width: 40%;
 
             div {
-                margin-inline: 40px;
+                width: 100%;
             }
         }
     }
@@ -1633,7 +1635,7 @@ footer {
 
 /* Telefonos */
 
-@media screen and (width <= 900px) {
+@media screen and (width <=900px) {
     body {
         width: 730px;
     }
@@ -1734,37 +1736,35 @@ footer {
     }
 
     #info ul {
-        width: 70%;
-        padding: 0;
         flex-flow: row wrap;
         align-items: center;
         justify-content: center;
-        margin: 10px;
 
         li {
-            margin-block: 30px;
-            margin-inline: 120px;
+            width: 40%;
+            margin-block: 10px;
+            margin-inline: 10px;
         }
     }
 
 
     #shopbc {
         margin-block: 100px;
-    }
 
-    /* Categories */
-    #categories ul {
-        flex-flow: row wrap;
-        align-items: center;
-        gap: 10px;
+        /* Categories */
+        #categories ul {
+            flex-flow: row wrap;
+            align-items: center;
+            gap: 10px;
 
-        li {
-            text-align: center;
-            justify-content: center;
-            width: 40%;
+            li {
+                text-align: center;
+                justify-content: center;
+                width: 40%;
 
-            div {
-                margin-inline: 40px;
+                div {
+                    width: 100%;
+                }
             }
         }
     }
