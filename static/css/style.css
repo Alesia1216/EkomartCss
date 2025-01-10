@@ -230,15 +230,16 @@ nav #page::after {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-inline: 80px;
 
     ul {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         list-style-type: none;
         padding: 0;
-        width: 100%;
+        width: 1200px;
 
         li {
             width: fit-content;
@@ -249,9 +250,6 @@ nav #page::after {
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 1fr 1fr;
-        margin-inline: 20px;
-        justify-content: center;
-        place-items: center;
     }
 
     article>img {
@@ -327,6 +325,7 @@ nav #page::after {
         flex-direction: row;
         justify-content: space-between;
         list-style-type: none;
+        padding: 0;
     }
 
     #categories ul li {
@@ -1108,6 +1107,7 @@ footer {
 
     #info {
         margin-block: 40px;
+        margin-inline: 80px;
     }
 
 
@@ -1288,7 +1288,7 @@ footer {
                 padding: 0;
             }
 
-            p{
+            p {
                 text-align: center;
             }
 
@@ -1477,20 +1477,29 @@ footer {
         font-size: x-large;
     }
 
-    #info ul {
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+    #info {
+        width: 660px;
+        margin-block: 40px;
 
-        li {
-            width: 40%;
-            margin-block: 10px;
-            margin-inline: 10px;
+        ul {
+            flex-flow: row wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-block: 0;
 
-            h3,
-            p {
-                font-size: x-large;
+            li {
+                width: 40%;
+
+                article{
+                    align-items: center;
+                }
+
+                h3,
+                p {
+                    font-size: x-large;
+                    width: fit-content;
+                    height: fit-content;
+                }
             }
         }
     }
@@ -1531,8 +1540,8 @@ footer {
 
 
 
-     /* Interesting */
-     #interesting {
+    /* Interesting */
+    #interesting {
         flex-direction: column;
         align-items: center;
         height: 1000px;
@@ -1552,8 +1561,8 @@ footer {
     }
 
 
-      /* Deals */
-      #deals {
+    /* Deals */
+    #deals {
         margin-block: 20px;
 
         h2 {
@@ -1577,9 +1586,7 @@ footer {
             div {
                 #deal1,
                 #deal2 {
-                    p,
-                    strong,
-                    span {
+                    p,strong,span {
                         font-size: x-large;
                     }
 
@@ -1603,11 +1610,11 @@ footer {
 
     /* Featured */
     #featured {
-        h2{
+        h2 {
             font-size: xxx-large;
         }
 
-        p{
+        p {
             font-size: x-large;
         }
 
@@ -1635,19 +1642,19 @@ footer {
                 width: 40%;
 
                 article {
-                    span, h4, p{
+                    span,h4,p {
                         font-size: x-large;
                     }
 
-                    a{
-                        img{
+                    a {
+                        img {
                             width: 230px;
                             height: 230px;
                         }
                     }
 
-                    section{
-                        img{
+                    section {
+                        img {
                             width: 25px;
                             height: 25px;
                         }
@@ -1671,7 +1678,7 @@ footer {
             font-size: xxx-large;
         }
 
-        p{
+        p {
             font-size: x-large;
         }
 
@@ -1688,7 +1695,9 @@ footer {
                 justify-content: center;
                 text-align: center;
 
-                a, p, h3{
+                a,
+                p,
+                h3 {
                     font-size: x-large;
                 }
 
@@ -1712,11 +1721,12 @@ footer {
         width: 80%;
         padding-block: 10px;
 
-        h3{
+        h3 {
             font-size: xx-large;
         }
 
-        a, p{
+        a,
+        p {
             font-size: x-large;
         }
     }
@@ -1970,20 +1980,30 @@ footer {
         font-size: x-large;
     }
 
-    #info ul {
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+    #info {
+        width: 590px;
+        margin-block: 40px;
+        margin-inline: 70px;
 
-        li {
-            width: 40%;
-            margin-block: 10px;
-            margin-inline: 10px;
+        ul {
+            flex-flow: row wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-block: 0;
 
-            h3,
-            p {
-                font-size: x-large;
+            li {
+                width: 40%;
+
+                article{
+                    align-items: center;
+                }
+
+                h3,
+                p {
+                    font-size: x-large;
+                    width: fit-content;
+                    height: fit-content;
+                }
             }
         }
     }
@@ -2069,9 +2089,7 @@ footer {
             div {
                 #deal1,
                 #deal2 {
-                    p,
-                    strong,
-                    span {
+                    p,strong,span {
                         font-size: x-large;
                     }
 
@@ -2096,11 +2114,11 @@ footer {
 
     /* Featured */
     #featured {
-        h2{
+        h2 {
             font-size: xxx-large;
         }
 
-        p{
+        p {
             font-size: x-large;
         }
 
@@ -2128,19 +2146,19 @@ footer {
                 width: 40%;
 
                 article {
-                    span, h4, p{
+                    span,h4,p {
                         font-size: x-large;
                     }
 
-                    a{
-                        img{
+                    a {
+                        img {
                             width: 250px;
                             height: 250px;
                         }
                     }
-                    
-                    section{
-                        img{
+
+                    section {
+                        img {
                             width: 25px;
                             height: 25px;
                         }
@@ -2164,7 +2182,7 @@ footer {
             font-size: xxx-large;
         }
 
-        p{
+        p {
             font-size: x-large;
         }
 
@@ -2181,7 +2199,9 @@ footer {
                 justify-content: center;
                 text-align: center;
 
-                a, p, h3{
+                a,
+                p,
+                h3 {
                     font-size: x-large;
                 }
 
@@ -2205,11 +2225,12 @@ footer {
         width: 80%;
         padding-block: 10px;
 
-        h3{
+        h3 {
             font-size: xx-large;
         }
 
-        a, p{
+        a,
+        p {
             font-size: x-large;
         }
     }
