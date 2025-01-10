@@ -251,8 +251,7 @@ nav #page::after {
         grid-template-rows: 1fr 1fr;
         margin-inline: 20px;
         justify-content: center;
-        justify-items: center;
-        align-items: center;
+        place-items: center;
     }
 
     article>img {
@@ -1541,7 +1540,6 @@ footer {
         gap: 100px;
 
         article {
-
             h4 {
                 font-size: xxx-large;
             }
@@ -1608,6 +1606,7 @@ footer {
         h2{
             font-size: xxx-large;
         }
+
         p{
             font-size: x-large;
         }
@@ -1639,12 +1638,14 @@ footer {
                     span, h4, p{
                         font-size: x-large;
                     }
+
                     a{
                         img{
                             width: 230px;
                             height: 230px;
                         }
                     }
+
                     section{
                         img{
                             width: 25px;
@@ -1808,6 +1809,7 @@ footer {
         font-size: x-large;
         height: fit-content;
     }
+
     footer section {
         flex-direction: row;
         align-items: center;
@@ -2030,7 +2032,6 @@ footer {
         gap: 100px;
 
         article {
-
             h4 {
                 font-size: xxx-large;
             }
@@ -2098,6 +2099,7 @@ footer {
         h2{
             font-size: xxx-large;
         }
+
         p{
             font-size: x-large;
         }
@@ -2129,12 +2131,14 @@ footer {
                     span, h4, p{
                         font-size: x-large;
                     }
+
                     a{
                         img{
                             width: 250px;
                             height: 250px;
                         }
                     }
+                    
                     section{
                         img{
                             width: 25px;
