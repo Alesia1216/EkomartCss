@@ -44,7 +44,6 @@ header {
     select {
         border: none;
         background: none;
-        font-size: 44px;
     }
 }
 
@@ -78,7 +77,6 @@ header {
 #fila1 a:active,
 #fila1 a:hover {
     color: black;
-    text-decoration: none;
 }
 
 
@@ -132,12 +130,7 @@ nav {
         width: 70%;
     
         li{
-           
             width: fit-content;
-
-            a{
-                font-size: 44px;
-            }
             
         }
     }
@@ -149,7 +142,6 @@ nav a:visited,
 nav a:active,
 nav a:hover {
     color: black;
-    text-decoration: none;
 }
 
 nav #home::after {
@@ -235,7 +227,6 @@ nav #page::after {
     nav a:active,
     nav a:hover {
         color: white;
-        text-decoration: none;
     }
 }
 
@@ -399,7 +390,7 @@ nav #page::after {
             margin: 0;
         }
 
-        #sale {
+        #saleupto {
             color: white;
             background-color: limegreen;
             padding: 2px;
@@ -601,7 +592,6 @@ nav #page::after {
             height: 30px;
             border-radius: 7px;
             padding-inline: 7px;
-            font-size: 44px;
         }
 
         p {
@@ -613,7 +603,6 @@ nav #page::after {
             padding: 2px;
             border-radius: 5px;
             color: #219150;
-            text-decoration: none;
         }
 
         li>a:link,
@@ -621,7 +610,6 @@ nav #page::after {
         li>a:active,
         li>a:hover {
             color: black;
-            text-decoration: none;
         }
 
     }
@@ -839,7 +827,6 @@ nav #page::after {
     a:active,
     a:hover {
         color: black;
-        text-decoration: none;
     }
 
     #aboutcontact {
@@ -977,20 +964,14 @@ nav #page::after {
         list-style-type: none;
         width: 70%;
     
-        li{
-           
+        li{      
             width: fit-content;
-
-            a{
-                font-size: 44px;
-            }
 
             a:link,
             a:visited,
             a:active,
             a:hover {
                 color: black;
-                text-decoration: none;
             }
             
         }

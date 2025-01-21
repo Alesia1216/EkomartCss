@@ -10,12 +10,13 @@
 
 <body>
   <header>
-    <section id="fila1">
+    <section id="fila1" aria-label="Settings">
       <h2 class="hidden">Settings</h2>
-      <section id="lenguage">
+      <section id="lenguage" aria-label="Language">
         <h3 class="hidden">Language</h3>
         <form action="#">
-          <select name="lenguajes">
+          <span id="languajes-label" class="hidden">Select your language</span>
+          <select name="lenguajes" aria-labelledby="languajes-label">
             <option value="english">English</option>
             <option value="spanish">Spanish</option>
             <option value="chinese">Chinese</option>
@@ -26,22 +27,23 @@
           </select>
         </form>
       </section>
-      <section id="currency">
+      <section id="currency" aria-label="Currency">
         <h3>Currency</h3>
         <form action="#">
-          <select name="currency">
+          <span id="currency-label" class="hidden">Select your currency</span>
+          <select name="currency" aria-labelledby="currency-label">
             <option value="euros">€</option>
             <option value="dolars">$</option>
             <option value="yens">¥</option>
           </select>
         </form>
       </section>
-      <section id="register">
+      <section id="register" aria-label="Register and info">
         <h3 class="hidden">Register and info</h3>
         <p><a href="#">Sign In</a>/<a href="#">Register</a></p>
         <p>Free express international delivery + EASY returns</p>
       </section>
-      <section id="social">
+      <section id="social" aria-label="Social Media">
         <h3 class="hidden">Social Media</h3>
         <a><img src="static/img/fb.png" alt="logo de facebook" /></a>
         <a><img src="static/img/ig.png" alt="logo de instagram" /></a>
@@ -49,8 +51,8 @@
         <a><img src="static/img/yt.png" alt="logo de youtube" /></a>
       </section>
     </section>
-    <section id="fila2">
-      <section id="contact">
+    <section id="fila2" aria-label="ekommart contact and toolbar">
+      <section id="contact" aria-label="Contact">
         <h3 class="hidden">Contact</h3>
         <img src="static/img/headset.png" alt="icono de auriculares" />
         <div id="headset">
@@ -59,7 +61,7 @@
         </div>
       </section>
       <h1>ekommart</h1>
-      <section id="search">
+      <section id="search" aria-label="Search, user, saved, cart">
         <h3 class="hidden">Search, user, saved,cart</h3>
         <a href="#"><img src="static/img/search.png" alt="icono de busqueda" /></a>
         <a href="#"><img src="static/img/user.png" alt="icono de usuario" /></a>
@@ -82,18 +84,18 @@
   </nav>
 
   <main>
-    <section id="banner">
+    <section id="banner" aria-label="Banner">
       <h1>Healthy Food & Organic Market</h1>
       <p>All natural products</p>
       <a href="#">Shop now</a>
     </section>
 
-    <section id="info">
+    <section id="info" aria-label="Info about ekommart">
       <h2 class="hidden">Info</h2>
       <ul>
 
         <li>
-          <article>
+          <article aria-label="Info about free delivery">
             <img src="static/img/shippment.png" alt="icono de envio" />
             <h3>FREE DELIVERY</h3>
             <p id="shippment">For all orders over $100</p>
@@ -101,7 +103,7 @@
         </li>
 
         <li>
-          <article>
+          <article aria-label="Info about returns">
             <img src="static/img/reload.png" alt="icono de devolucion" />
             <h3>90 DAYS RETURN</h3>
             <p id="reload">If goods have problems</p>
@@ -109,7 +111,7 @@
         </li>
 
         <li>
-          <article>
+          <article aria-label="Info about secure payment">
             <img src="static/img/creditcard.png" alt="icono de targeta de credito" />
             <h3>SECURE PAYMENT</h3>
             <p id="payment">100% secure payment</p>
@@ -117,7 +119,7 @@
         </li>
 
         <li>
-          <article>
+          <article aria-label="Info about support">
             <img src="static/img/chat.png" alt="icono de chat" />
             <h3>24/7 SUPPORT</h3>
             <p id="chat">Dedicated support</p>
@@ -127,11 +129,11 @@
       </ul>
     </section>
 
-    <section id="shopbc">
+    <section id="shopbc" aria-label="Shop by category">
       <h2>Shop By Category</h2>
       <p>Visit our shop to see amazing products</p>
       <hr>
-      <section id="categories">
+      <section id="categories" aria-label="Categories of products">
         <h3 class="hidden">types of products</h3>
         <ul>
 
@@ -174,16 +176,16 @@
         </ul>
       </section>
 
-      <section id="interesting">
+      <section id="interesting" aria-label="Interesting products">
         <h3 class="hidden">Interesting products</h3>
-        <article id="interesting1">
+        <article id="interesting1" aria-label="Ad about 15% discount on organic food">
           <p>Tasty Healthy</p>
           <h4>Organic Food</h4>
-          <p id="sale">SALE UP TO -15%</p>
+          <p id="saleupto">SALE UP TO -15%</p>
           <a>Shop now!</a>
         </article>
 
-        <article id="interesting2">
+        <article id="interesting2" aria-label="Ad about 20% discount on garlic chips">
           <p id="off">20% OFF</p>
           <h4>Breackfast & Lunch</h4>
           <a>Shop now!</a>
@@ -193,16 +195,16 @@
 
     </section>
 
-    <section id="deals">
+    <section id="deals" aria-label="Deals of the day">
       <h2>Deals of the day</h2>
       <p>Visit our shop to see amazing products</p>
       <div>
-        <article>
+        <article aria-label="Deal 1 of the day">
           <h3 class="hidden">Product</h3>
           <div>
             <a href="#"><img src="static/img/lettuce.png" alt="imagen de lechuga" /></a>
             <div id="deal1">
-              <section>
+              <section aria-label="User rating: 5 stars for lettuce">
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -232,12 +234,12 @@
           </div>
         </article>
 
-        <article>
+        <article aria-label="Deal 2 of the day">
           <h3 class="hidden">Product</h3>
           <div>
             <a href="#"><img src="static/img/pepper.png" alt="imagen de pimientos" /></a>
             <div id="deal2">
-              <section>
+              <section aria-label="User rating: 5 stars for pepper">
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -270,7 +272,7 @@
       </div>
     </section>
 
-    <section id="featured">
+    <section id="featured" aria-label="Featured products">
       <h2>Featured Products</h2>
       <p>Visit our shop to see amazing products</p>
       <ul>
@@ -300,15 +302,15 @@
           </a>
         </li>
       </ul>
-      <section id="subfeatured">
+      <section id="subfeatured" aria-label="Subtypes of products">
         <h3 class="hidden">Subtype of products</h3>
         <ul>
           <li>
-            <article>
+            <article aria-label="New product: Yogurt">
               <p id="new">New</p>
               <p id="sale">Sale</p>
               <a href="#"><img src="static/img/iogurt.png" alt="imagen de iogurt" /></a>
-              <section>
+              <section aria-label="User rating: 5 stars for yogurt">
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -324,9 +326,9 @@
           </li>
 
           <li>
-            <article>
+            <article aria-label="New product: Beef">
               <a href="#"><img src="static/img/beef.png" alt="imagen de carne picada" /></a>
-              <section>
+              <section aria-label="User rating: 5 stars for beef">
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -342,9 +344,9 @@
           </li>
 
           <li>
-            <article>
+            <article aria-label="New product: Apricot">
               <a href="#"><img src="static/img/apricot.png" alt="imagen de melocoton" /></a>
-              <section>
+              <section aria-label="User rating: 5 stars for apricot"> 
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -360,9 +362,9 @@
           </li>
 
           <li>
-            <article>
+            <article aria-label="New product: Butter"> 
               <a href="#"><img src="static/img/butter.png" alt="imagen de mantequilla" /></a>
-              <section>
+              <section aria-label="User rating: 5 stars for butter"> 
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -378,9 +380,9 @@
           </li>
 
           <li>
-            <article>
+            <article aria-label="New product: Eggs">
               <a href="#"><img src="static/img/eggs.png" alt="imagen de huevos" /></a>
-              <section>
+              <section aria-label="User rating: 5 stars for eggs">
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -396,9 +398,9 @@
           </li>
 
           <li>
-            <article>
+            <article aria-label="New product: Fig">
               <a href="#"><img src="static/img/fig.png" alt="imagen de higos" /></a>
-              <section>
+              <section aria-label="User rating: 5 stars for figs">
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -414,9 +416,9 @@
           </li>
 
           <li>
-            <article>
+            <article aria-label="New product: Milk">
               <a href="#"><img src="static/img/milk.png" alt="imagen de leche" /></a>
-              <section>
+              <section aria-label="User rating: 5 stars for milk">
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -432,9 +434,9 @@
           </li>
 
           <li>
-            <article>
+            <article aria-label="New product: Sausages">
               <a href="#"><img src="static/img/sausages.png" alt="imagen de salchichas" /></a>
-              <section>
+              <section aria-label="User rating: 5 stars for sausages"> 
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -450,9 +452,9 @@
           </li>
 
           <li>
-            <article>
+            <article aria-label="New product: Onions">
               <a href="#"><img src="static/img/onions.png" alt="imagen de cebollas" /></a>
-              <section>
+              <section aria-label="User rating: 5 stars for onions"> 
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -468,9 +470,9 @@
           </li>
 
           <li>
-            <article>
+            <article aria-label="New product: Pepper">
               <a href="#"><img src="static/img/pepper.png" alt="imagen de pimientos" /></a>
-              <section>
+              <section aria-label="User rating: 5 stars for peppers"> 
                 <h4 class="hidden">Rating</h4>
                 <img src="static/img/star.png" alt="icono de estrella" />
                 <img src="static/img/star.png" alt="icono de estrella" />
@@ -489,13 +491,13 @@
       </section>
     </section>
 
-    <section id="news">
+    <section id="news" aria-label="Latest news">
       <h2>Latest news</h2>
       <p>Dont miss our latest news</p>
       <div>
-        <article>
+        <article aria-label="New news: Naranjas y granadas">
           <a href="#"><img src="static/img/naranja.png" alt="imagen de naranjas y granadas" /></a>
-          <section>
+          <section aria-label="information about news: Naranjas y granadas">
             <p>Performance</p>
             <p>· 28 Jun,2019</p>
             <p>· by Administrator</p>
@@ -507,9 +509,9 @@
             <p>Read more</p>
           </a>
         </article>
-        <article>
+        <article aria-label="New news: Smoothies">
           <a href="#"><img src="static/img/smothie.png" alt="imagen de smoothies" /></a>
-          <section>
+          <section aria-label="information about news: Smoothies">
             <p>Performance</p>
             <p>· 28 Jun,2019</p>
             <p>· by Administrator</p>
@@ -521,9 +523,9 @@
             <p>Read more</p>
           </a>
         </article>
-        <article>
+        <article aria-label="New news: Cocteles">
           <a href="#"><img src="static/img/coctel.png" alt="imagen de distintos cocteles" /></a>
-          <section>
+          <section aria-label="information about news: Cocteles">
             <p>Performance</p>
             <p>· 28 Jun,2019</p>
             <p>· by Administrator</p>
@@ -538,10 +540,10 @@
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" aria-label="About us">
       <h2 class="hidden">About us</h2>
 
-      <section>
+      <section aria-label="find in fast">
         <h3>FIND IN FAST</h3>
         <ul>
           <li><a href="#">Accesories</a></li>
@@ -555,7 +557,7 @@
         </ul>
       </section>
 
-      <section>
+      <section aria-label="merchant central">
         <h3>MERCHANT CENTRAL</h3>
         <ul>
           <li><a href="#">Merchant Sign In</a></li>
@@ -569,7 +571,7 @@
         </ul>
       </section>
 
-      <section>
+      <section aria-label="information">
         <h3>INFORMATION</h3>
         <ul>
           <li><a href="#">About Us</a></li>
@@ -583,7 +585,7 @@
         </ul>
       </section>
 
-      <section id="aboutcontact">
+      <section id="aboutcontact" aria-label="Contact us">
         <h3>CONTACT US</h3>
         <a href="#">
           <p>If you have any questions, please</p>
@@ -604,7 +606,7 @@
 
     </section>
 
-    <section id="newsletter">
+    <section id="newsletter" aria-label="Newsletter">
       <div id="signup">
         <img src="static/img/letter.png" alt="icono de carta/email" />
         <h2>SIGN UP FOR NEWSLETTER</h2>
@@ -616,7 +618,7 @@
       </div>
     </section>
 
-    <section id="botomnav">
+    <section id="botomnav" aria-label="Bottom nav bar">
       <h2 class="hidden">Bottom nav bar</h2>
       <ul>
         <li><a href="#">Home</a></li>
@@ -632,14 +634,14 @@
 
   <footer>
 
-    <section>
+    <section aria-label="Copyright">
       <h2 class="hidden">Copyright</h2>
       <p>Copyright © 2020</p>
       <p><strong>ekommart.</strong></p>
       <p>All Rights Reserved</p>
     </section>
 
-    <section>
+    <section aria-label="Follow us">
       <h2 class="hidden">Follow us</h2>
       <a href="#"><img src="static/img/fb.png" alt="icono de facebook" /></a>
       <a href="#"><img src="static/img/tw.png" alt="icono de twitter" /></a>
@@ -647,7 +649,7 @@
       <a href="#"><img src="static/img/yt.png" alt="icono de youtube" /></a>
     </section>
 
-    <section>
+    <section aria-label="Payment">
       <h2 class="hidden">Payment</h2>
       <img src="static/img/visa.png" alt="icono de targeta de credito visa" />
       <img src="static/img/mastercard.png" alt="icono de targeta de credito mastercard" />
