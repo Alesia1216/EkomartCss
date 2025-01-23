@@ -11,7 +11,9 @@
 <body>
   <header>
     <section id="fila1" aria-label="Settings">
-      <h2 class="hidden">Settings</h2>
+      <!--fix the No option to skip repeated content error-->
+      <a href="#inicio">Skip to main content</a>
+      <h2 id="inicio" class="hidden">Settings</h2>
       <section id="lenguage" aria-label="Language">
         <h3 class="hidden">Language</h3>
         <form action="#">
@@ -24,6 +26,7 @@
             <option value="french">French</option>
             <option value="german">German</option>
             <option value="italian">Italian</option>
+            <input type="submit" value="Apply languaje" />
           </select>
         </form>
       </section>
@@ -35,6 +38,7 @@
             <option value="euros">€</option>
             <option value="dolars">$</option>
             <option value="yens">¥</option>
+            <input type="submit" value="Apply currency" />
           </select>
         </form>
       </section>
@@ -506,7 +510,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam.</p>
           <a>
-            <p>Read more</p>
+            <p>Read more about orange's news</p>
           </a>
         </article>
         <article aria-label="New news: Smoothies">
@@ -520,7 +524,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam.</p>
           <a>
-            <p>Read more</p>
+            <p>Read more about smoothie's news</p>
           </a>
         </article>
         <article aria-label="New news: Cocteles">
@@ -534,7 +538,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua. Ut enim ad minim veniam.</p>
           <a>
-            <p>Read more</p>
+            <p>Read more about cocktail's news</p>
           </a>
         </article>
       </div>

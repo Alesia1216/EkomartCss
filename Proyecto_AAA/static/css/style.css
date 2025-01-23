@@ -16,6 +16,17 @@ h1 {
     display: none;
 }
 
+button:focus, a:focus {
+    outline: 2px solid #007BFF; /* Resalta el elemento con un contorno azul */
+    outline-offset: 2px; /* Separa el contorno del borde del elemento */
+  }
+  
+  /* Campos de entrada */
+  input:focus, textarea:focus, select:focus {
+    outline: 2px solid #28A745; /* Resalta con un contorno verde */
+    outline-offset: 2px;
+  }
+
 
 /* HEADER */
 
@@ -216,7 +227,7 @@ nav #page::after {
         margin-left: 200px;
         padding-block: 16px;
         padding-inline: 32px;
-        background-color: #27ae60;
+        background-color: #10522a;
         border: none;
         border-radius: 5px;
         color: white;
@@ -319,11 +330,13 @@ nav #page::after {
             width: 100%;
             position: relative;
             padding-block: 6px;
+            visibility: hidden;
         }
 
         li:hover div {
             display: block;
             background-color: #219150;
+            visibility: visible;
         }
     }
 
@@ -392,14 +405,14 @@ nav #page::after {
 
         #saleupto {
             color: white;
-            background-color: limegreen;
+            background-color: #10522a;
             padding: 2px;
             border-radius: 5px;
         }
 
         #off {
             color: white;
-            background-color: orangered;
+            background-color: rgb(150 54 19);
             padding: 5px;
             border-radius: 5px;
         }
@@ -466,7 +479,7 @@ nav #page::after {
         margin-top: 20px;
 
         article {
-            border: 4px solid #27ae60;
+            border: 4px solid #10522a;
             display: flex;
             flex-direction: column;
             width: 600px;
@@ -516,7 +529,7 @@ nav #page::after {
 
                     strong {
                         font-size: 1.5rem;
-                        color: #27ae60;
+                        color: #10522a;
                     }
                 }
             }
@@ -530,7 +543,7 @@ nav #page::after {
                 span {
                     width: 45px;
                     height: 45px;
-                    background-color: #27ae60;
+                    background-color: #10522a;
                     color: white;
                     font-weight: bold;
                     font-size: 1.2rem;
@@ -602,7 +615,7 @@ nav #page::after {
             background-color: #f1ecec;
             padding: 2px;
             border-radius: 5px;
-            color: #219150;
+            color: #0c4423;
         }
 
         li>a:link,
@@ -643,11 +656,13 @@ nav #page::after {
                     text-align: center;
                     padding-block: 10px;
                     margin-top: 5px;
+                    visibility: hidden;
                 }
 
                 &:hover div {
                     background-color: #302e2e;
                     width: 100%;
+                    visibility: visible;
                 }
 
             }
@@ -669,7 +684,7 @@ nav #page::after {
             }
 
             p {
-                color: #27ae60;
+                color: #10522a;
                 font-weight: bold;
                 font-size: medium;
                 text-align: center;
@@ -703,7 +718,7 @@ nav #page::after {
             }
 
             #sale {
-                background-color: red;
+                background-color: rgb(146 11 11);
                 margin-top: 35px;
 
             }
@@ -743,7 +758,7 @@ nav #page::after {
         }
 
         p:first-of-type {
-            color: #27ae60;
+            color: #082c17;
         }
     }
 
@@ -778,7 +793,7 @@ nav #page::after {
 
             a>p:first-child {
                 font-weight: bold;
-                color: #219150;
+                color: #0f6432;
             }
 
         }
@@ -929,8 +944,12 @@ nav #page::after {
                 color: #555;
             }
 
+            input:focus {
+                border: 2px solid #10522a;
+            }
+
             button {
-                background-color: #27ae60;
+                background-color: #10522a;
                 color: white;
                 border: none;
                 padding: 8px 15px;
@@ -1007,7 +1026,7 @@ footer {
         }
 
         strong {
-            color: #219150;
+            color: #1fcf68;
             margin-inline-start: 10px;
         }
     }
