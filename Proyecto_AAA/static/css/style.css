@@ -209,9 +209,9 @@ nav #page::after {
     background-repeat: no-repeat;
     height: 350px;
 
-    h1 {
+    h2 {
         width: 500px;
-        font-size: 40px;
+        font-size: 3.5rem;
         margin-top: 70px;
         margin-left: 200px;
         margin-bottom: 0;
@@ -1131,7 +1131,7 @@ footer {
         text-align: center;
     }
 
-    #banner h1 {
+    #banner h2 {
         margin: 10px auto;
         font-size: 2.5rem;
     }
