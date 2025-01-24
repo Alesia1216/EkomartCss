@@ -316,7 +316,7 @@ nav #page::after {
 
     hr {
         width: 80px;
-        color: #219150;
+        color: #125e31;
     }
 
     /* CATEGORIES */
@@ -679,12 +679,16 @@ nav #page::after {
             align-items: center;
             text-align: center;
 
-            h4 {
-                margin: 0;
-            }
-
             p {
                 color: #10522a;
+                font-weight: bold;
+                font-size: medium;
+                text-align: center;
+                margin-top: 5px;
+            }
+            
+            p:first-of-type {
+                color: black;
                 font-weight: bold;
                 font-size: medium;
                 text-align: center;
@@ -960,7 +964,7 @@ nav #page::after {
             }
 
             button:hover {
-                background-color: #219150;
+                background-color: #156637;
             }
         }
     }
